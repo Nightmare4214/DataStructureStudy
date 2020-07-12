@@ -71,7 +71,7 @@ void insert_sort(T arr[], const int& n, _Pr cmp) {
         T temp = arr[i];
         int index = i - 1;
         //找插入位置
-        while (i >= 0 && cmp(temp, arr[index])) {
+        while (index >= 0 && cmp(temp, arr[index])) {
             arr[index + 1] = arr[index];
             --index;
         }
@@ -551,7 +551,7 @@ void insert_sort(T arr[], const int& left, const int& right, _Pr cmp) {
         T temp = arr[i];
         int index = i - 1;
         //找插入位置
-        while (i >= left && cmp(temp, arr[index])) {
+        while (index >= left && cmp(temp, arr[index])) {
             arr[index + 1] = arr[index];
             --index;
         }

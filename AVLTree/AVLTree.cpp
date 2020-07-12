@@ -226,6 +226,7 @@ AVLTreeNode<T> *AVLTree<T>::remove(AVLTreeNode<T> *rt, const T &value) {
             rt->right = remove(rt->right, minNode->value);
         }
     }
+    updateHeight(rt);
     return rt;
 }
 /**
